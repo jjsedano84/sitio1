@@ -1,0 +1,46 @@
+/* css/carrusel.css */
+.carrusel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slides {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: grid;
+    min-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    transition: opacity 1s ease;
+}
+
+.carrusel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+}
+
+.carrusel-controls button {
+    background-color: rgba(216,124,124,0.7);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.carrusel-controls button:hover {
+    background-color: rgba(216,124,124,1);
+}

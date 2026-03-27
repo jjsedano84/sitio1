@@ -1,0 +1,54 @@
+/* ===== HEADER PRINCIPAL ===== */
+
+.header-principal {
+    background: linear-gradient(135deg, #fff0f5, #ffe5ec);
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid #f7a1a1;
+    }
+
+
+.titulo-marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-marca h1 {
+    font-size: 3.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #d87c7c;
+    text-transform: uppercase;
+}
+
+/* Logo */
+.logo-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* ===== MENÚ ===== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #f7a1a1;
+    padding: 1rem;
+}
+
+.menu a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #fff0f5;
+    transform: scale(1.05);
+}

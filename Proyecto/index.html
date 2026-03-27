@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atalaya Postres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    
+</head>
+<body>
+
+<header class="header-principal">
+    
+    <div class="titulo-marca">
+        <img src="img/icono.png" alt="Logo" class="logo-img">
+        <h1>Atalaya Postres</h1>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>  
+        <a href="multimedia.html">Multimedia</a>
+      
+        <a href="login.html" id="linkLogin">Login</a>
+
+       
+        <span id="usuarioActivo"></span>
+    </nav>
+
+</header>
+
+<main>
+
+ 
+    <section class="carrusel">
+        <div class="slides">
+            <div class="slide"><img src="img/postre1.jpg"></div>
+            <div class="slide"><img src="img/postre2.jpg"></div>
+            <div class="slide"><img src="img/postre3.jpg"></div>
+        </div>
+
+        <div class="carrusel-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- BIENVENIDA -->
+    <section class="bienvenida">
+        <h2>Bienvenido a la experiencia dulce perfecta</h2>
+        <p>
+            En Atalaya Postres elaboramos productos artesanales con ingredientes
+            seleccionados y recetas tradicionales. Cada postre está diseñado
+            para convertir un momento común en una experiencia inolvidable.
+        </p>
+    </section>
+
+   
+    <section id="productosGrid">
+        <h2>Productos Destacados</h2>
+        <div class="producto-card" id="productosDestacados">
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-completo">
+
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <h3>Atalaya Postres</h3>
+            <p>Repostería artesanal premium.</p>
+            <p>Calidad, tradición e innovación.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>Calle Dulce 123</p>
+            <p>+57 300 000 0000</p>
+            <p>contacto@atalayapostres.com</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Horarios</h3>
+            <p>L-V: 8AM - 7PM</p>
+            <p>Sáb: 9AM - 6PM</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Síguenos</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>TikTok</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Atalaya Postres - Todos los derechos reservados
+    </div>
+
+</footer>
+
+<script src="js/productos.js"></script>
+<script src="js/carrusel.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

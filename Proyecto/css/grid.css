@@ -1,0 +1,92 @@
+body{
+    background-color: #b0b0b0eb;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px;
+    grid-auto-flow: row dense;
+}
+
+.caja{
+    background-color: rgb(40, 203, 75);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center; /* centrado horizontal */
+    align-items: center; /* centrado vertical*/
+}
+
+.caja1{
+    background-color: blue;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.caja2{
+    background-color: rgb(140, 6, 67);
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.caja4{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.caja6{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: rgb(21, 122, 122);
+}
+
+.caja7{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: rgb(244, 66, 26);
+}
+
+.caja9{
+    background-color: rgb(170, 159, 15);
+}
+
+
+/* Diseño responsivo*/
+
+@media(max-width: 768px){
+    .contenedorGrid{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 120px;
+        
+    }
+
+    .caja{
+        font-size: 1rem;
+    }
+
+    .caja1 , .caja7{
+        grid-column: span 2;
+    }
+}
+
+@media(max-width: 480px){
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9{
+        grid-column: span 1;
+        grid-row: auto;
+    }
+    .caja{
+        font-size: 0.8rem;
+    }
+    
+}

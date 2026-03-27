@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Atalaya Postres</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tu Carrito</h2>
+        <div id="carritoContainer">
+          
+        </div>
+        <div class="total">
+            <h3>Total: $<span id="totalPrecio">0</span></h3>
+            <button id="comprarBtn">Comprar</button>
+             <button onclick="vaciarCarrito()">Vaciar carrito</button>
+        </div>
+    </main>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

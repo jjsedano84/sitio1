@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica HTML</title>
+</head>
+<body>
+
+<header>
+    <h1>Práctica Html</h1>
+    
+
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com">google</a></li>
+            <li><a href="#tabla">tabla</a> </li>
+            <li><a href="#formulario">Formulario</a> </li>
+            <li><a href="#multimedia">multimedia</a> </li>
+            <li>Elemento </li>
+
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="tabla">
+        <h2>Ejemplo de tabla</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>juan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ana</td>
+                    <td>Ana@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Miguel</td>
+                    <td>Miguel@gmail.com</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulario de Registro</h2>
+
+        <form action="#" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required placeholder="ingresa tu nombre"> 
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" requerid>
+            
+            <label for="telefono">telefono:</label>
+            <input type="number" id="telefono" requerid>
+
+            <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" requerid>
+          
+            <label for="color">Color Favorito:</label>
+            <input type="color" id="color">
+          
+            <label for="hora">Hora Cita:</label>
+            <input type="datetime-local" id="hora">
+            
+            <label for="tipo_documento">Tipo de Documento:</label>
+            <select id="tipo_documento">
+                <option value=""></option>
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="CE">Cédula de Extranjería</option>
+                <option value="TI">Tarjeta de Identidad</option>
+            </select>
+
+                 <label>Género:</label>
+                    <input type="radio" name="genero" value="masculino"> Masculino
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                    <input type="radio" name="genero" value="otro"> otro
+
+                    
+
+                    <label>Intereses:</label>
+                    <input type="checkbox" name="interes" value="programacion"> Programación
+                    <input type="checkbox" name="interes" value="diseño"> Diseño
+       
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+                     
+                
+                <button type="submit">Enviar</button>
+                </form>
+    </section>
+
+    <section id="multimedia">
+        <h2>Elementos Multimedia</h2>
+       
+        <img src="img/sunset.jpg" alt="paisaje" width="500" >
+        
+         <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQR0HPtlRJHMb5hNa6uMvdXSoBXzqRLjyQPQ&s" 
+            alt="Imagen de ejemplo"
+            width="500"
+        >
+
+        
+       
+       
+         
+    </section>
+
+    
+
+</main>
+
+
+</body>
+</html>

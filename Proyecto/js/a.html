@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Juego Adivina el Número</title>
+</head>
+<body>
+
+<h1>Juego: Adivina el número</h1>
+
+<input type="number" id="numeroAdivinar" placeholder="Número 1-50">
+<button id="btnIntentar">Intentar</button>
+
+<p id="resultadoJuego"></p>
+
+<button id="btnReiniciar">Reiniciar juego</button>
+
+<script>
+
+// Número secreto y contador de intentos
+var numeroSecreto = Math.floor(Math.random() * 50) + 1;
+var intentos = 0;
+var maxIntentos = 5;
+
+// Función para intentar adivinar
+function intentarNumero() {
+
+    if (intentos >= maxIntentos) {
+        document.getElementById("resultadoJuego").innerHTML =
+        "Ya alcanzaste el máximo de intentos. El número era " + numeroSecreto;
+        return;
+    }
+
+    var numero = parseInt(document.getElementById("numeroAdivinar").value);
+    var resultado = document.getElementById("resultadoJuego");
+
+    intentos++;
+
+    if (numero === numeroSecreto) {
+        resultado.innerHTML = "¡Correcto! Adivinaste en " + intentos + " intento(s).";
+    } 
+    else if (numero < numeroSecreto) {
+        resultado.innerHTML = "El número secreto es mayor. Intento " + intentos + " de " + maxIntentos;
+    } 
+    else if (numero > numeroSecreto) {
+        resultado.innerHTML = "El número secreto es menor. Intento " + intentos + " de " + maxIntentos;
+    } 
+    else {
+        resultado.innerHTML = "Ingresa un número válido.";
+    }
+
+    if (intentos === maxIntentos && numero !== numeroSecreto) {
+        resultado.innerHTML = "Perdiste 😢. El número secreto era " + numeroSecreto;
+    }
+}
+
+// Evento botón intentar
+document.getElementById("btnIntentar").addEventListener("click", intentarNumero);
+
+// Función para reiniciar el juego
+function reiniciarbbJuego() {
+    numeroSecreto = Math.floor(Math.random() * 50) + 1;
+    intentos = 0;
+
+    document.getElementById("resultadoJuego").innerHTML =
+    "Juego reiniciado. Intenta adivinar el nuevo número.";
+
+    document.getElementById("numeroAdivinar").value = "";
+}
+
+// Evento botón reiniciar
+document.getElementById("btnReiniciar").addEventListener("click", reiniciarJuego);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+#carritoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff0f5;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.carrito-item img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.total {
+    margin-top: 1em;
+    text-align: right;
+}
